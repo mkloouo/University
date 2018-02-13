@@ -39,7 +39,7 @@ class APC {
             ArrayList<Integer> tempList = new ArrayList<>();
             int open = -1, close = -1;
             for (int i = 0; i < listOfOperations.size(); i++) {
-                if (listOfOperations.get(i) != 2000 && listOfOperations.get(i) != 3000)Чё
+                if (listOfOperations.get(i) != 2000 && listOfOperations.get(i) != 3000)
                     tempList.add(listOfOperations.get(i));
                 if (listOfOperations.get(i) == 2000)
                     open = i;
