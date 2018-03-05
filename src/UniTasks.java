@@ -1,6 +1,5 @@
 import Data.PromptStrings;
 import Data.UniTasksStrings;
-import SKS.InputHandler;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -25,7 +24,9 @@ public class UniTasks {
                     + PromptStrings.YOUR_CHOICE_MSG);
             choice = input.readLine();
             if (choice.matches("(1|[sS][kK][sS])"))
-                InputHandler.handleSKS(input);
+                SKS.InputHandler.handleSKS(input);
+            else if (choice.matches("(2|[Tt][kK][iI][Tt][Pp])"))
+                TKITP.InputHandler.handleTKITP(input);
             else if (choice.matches("(q(uit)?|e(xit)?)"))
                 return;
             else
