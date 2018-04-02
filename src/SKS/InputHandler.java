@@ -23,6 +23,10 @@ public class InputHandler {
                 new APC(input);
             else if (choice.matches("(3|[Vv]ector(izer)?)"))
                 new Vectorizer(input);
+            else if (choice.matches("(4|[Mm]acro([Gg]raph)?)"))
+                new MacroGraph(input);
+            else if (choice.matches("(5|[Ss]ole)"))
+                new Sole(input);
             else if (choice.matches("(e(xit)?|q(uit)?)"))
                 return;
             else

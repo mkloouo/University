@@ -169,7 +169,7 @@ class ADC {
 
     private void showResultForOneCombination(ArrayList<Integer> listOfAO, ArrayList<Integer> listOfLO,
                                              int x1, int x2, int x3, int x4) {
-        countO(listOfAO, listOfLO, x1, x3, x4, x2);
+        countO(listOfAO, listOfLO, x2, x3, x1, x4);
 
         System.out.printf("|%1$2d|%2$2d|%3$2d|%4$2d| %5$-15s | %6$-13s | %7$-6s |\n",
                 x1, x2, x3, x4, cycleActions.toString(),
